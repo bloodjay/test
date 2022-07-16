@@ -1,0 +1,37 @@
+.home{
+  display: block;
+}
+
+.card-container{
+   position: relative;
+}
+.home-cell{
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+.home-cell:hover + .hide {
+  opacity: 100%;
+  color: red;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+.search{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    gap : 50px 50px;
+    grid-template-columns:  repeat(5 , 1fr);
+}
+
+.hide{
+    opacity: 0;
+}
